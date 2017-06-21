@@ -1,4 +1,4 @@
-package io.acode.loancalc
+package io.acode.loancalc.model
 
 /**
   * Created by aaron on 6/15/17.

@@ -1,7 +1,8 @@
-package io.acode.loancalc
+package io.acode.loancalc.simulator
+
+import io.acode.loancalc.model.{Loan, LoanGrouping}
 
 import scala.collection.JavaConverters._
-import java.util
 
 /**
   * Created by aaron on 6/15/17.

@@ -1,6 +1,8 @@
 package io.acode.loancalc
 
+import io.acode.loancalc.model.LoanGrouping
 import junit.framework.TestCase
+
 import scala.collection.JavaConverters._
 
 /**
@@ -21,7 +23,7 @@ class SortTest extends TestCase {
         _1.interest>_2.interest ||
           (_1.interest == _2.interest && _1.balance<_2.balance) )
       .foreach(loan => {
-        println(loan)
+        //println(loan)
       })
   }
 

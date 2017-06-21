@@ -1,4 +1,4 @@
-package io.acode.loancalc
+package io.acode.loancalc.model
 
 import junit.framework.TestCase
 

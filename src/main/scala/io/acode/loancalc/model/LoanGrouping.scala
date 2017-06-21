@@ -1,7 +1,8 @@
-package io.acode.loancalc
+package io.acode.loancalc.model
+
+import java.util
 
 import scala.collection.JavaConverters._
-import java.util
 
 /**
   * Created by aaron on 6/15/17.

@@ -1,5 +1,9 @@
 package io.acode.loancalc
 
+import io.acode.loancalc.model.LoanGrouping
+import io.acode.loancalc.simulator.PaymentSimulator
+import io.acode.loancalc.util.LoanLoader
+
 /**
   * Created by aaron on 6/15/17.
   */
@@ -19,12 +23,7 @@ object LoanCalc extends App {
   paymentSimulator.equalPayments()
 
   def refreshGrouping(): LoanGrouping = {
-    val loanGrouping: LoanGrouping = new LoanGrouping
-    loanGrouping.addLoan(4730.23, 6.55)
-    loanGrouping.addLoan(2731.81, 6.55)
-    loanGrouping.addLoan(3939.26, 3.61)
-    loanGrouping.addLoan(6830.37, 3.61)
-    loanGrouping.addLoan(6666.56, 3.61)
+    val loanGrouping: LoanGrouping = LoanLoader.load()
     loanGrouping
   }
 }
